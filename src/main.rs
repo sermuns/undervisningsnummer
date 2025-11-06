@@ -1,7 +1,7 @@
+use gloo::console::log;
 use yew::prelude::*;
 
 const CARGO_PKG_NAME: &str = env!("CARGO_PKG_NAME");
-const CARGO_PKG_DESCRIPTION: &str = env!("CARGO_PKG_DESCRIPTION");
 
 #[function_component]
 fn App() -> Html {
@@ -19,9 +19,18 @@ fn App() -> Html {
 
     html! {
         <>
+            <main>
+            <h1>{CARGO_PKG_NAME}</h1>
             <p> {"current count: "} {*state} </p>
             <button onclick={incr_counter}> {"+"} </button>
             <button onclick={decr_counter}> {"-"} </button>
+            </main>
+            <footer>
+                {"Skapad av  "}
+                <a href="https://samake.se" target="_blank">
+                    {"Samuel \"sermuns\" Åkesson"}
+                </a>
+            </footer>
         </>
     }
 }
@@ -30,4 +39,3 @@ fn main() {
     console_error_panic_hook::set_once();
     yew::Renderer::<App>::new().render();
 }
-

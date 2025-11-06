@@ -23,41 +23,13 @@
 
 :root {
 	--accent-color: hsl(0, 40%, 75%);
-	--background-color: hsl(0, 10%, 12%);
-	--foreground-color: hsl(0, 10%, 90%);
+	--background-color: hsl(180, 15%, 12%);
+	--foreground-color: hsl(180, 15%, 85%);
 
 	background-color: var(--background-color);
 	color: var(--foreground-color);
 
 	font-family: "JetBrains Mono", monospace;
-}
-
-#file-pick {
-	border: 0.1rem var(--accent-color) solid;
-	border-radius: 0.5rem;
-	padding: 0.5rem;
-
-	&.hovered {
-		background-color: var(--accent-color);
-		color: var(--background-color);
-	}
-
-	input {
-		font-size: inherit;
-		font-family: inherit;
-	}
-
-	label {
-		display: contents;
-	}
-}
-
-#processed {
-	padding: 2rem 1rem;
-	display: grid;
-	grid-template-columns: repeat(4, auto);
-	justify-content: left;
-	gap: min(3rem, 3vw);
 }
 
 a {
