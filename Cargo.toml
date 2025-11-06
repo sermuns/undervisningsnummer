@@ -1,0 +1,12 @@
+[package]
+name = "pdf-to-whatever"
+description = "Download images of all pages in PDF. Processing is done locally in browser using WASM."
+version = "0.1.0"
+edition = "2024"
+authors = ["Samuel Åkesson <sermuns@lysator.liu.se>"]
+license = "WTFPL"
+
+[dependencies]
+console_error_panic_hook = "0.1.7"
+gloo = "0.11.0"
+yew = { version = "0.21.0", features = ["csr"] }
