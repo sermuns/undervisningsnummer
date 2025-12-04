@@ -6,7 +6,7 @@ Webbapplikation för att se antalet föreläsningar, lektioner, etc som har pass
 
 Jag läser kursen Datorkonstruktion, TSEA83, och vill veta hur många föreläsningar jag har missat. 
 
-1. Gå till [un.samake.se](https://un.samake.se)
+1. Gå till [un.samake.se](https://www.lysator.liu.se/~sermuns/un/)
 2. Skriv in kurskoden TSEA83. 
 3. Jag ser att den senaste föreläsningen var föreläsning 9, och nästa föreläsning är på onsdag.
 
